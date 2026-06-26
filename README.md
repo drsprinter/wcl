@@ -1,13 +1,13 @@
-# Women's Communication Lab website
+# Women's Communication Lab
 
-GitHub Pagesで公開できる静的HTMLサイトです。
+GitHub Pages用の静的HTMLサイトです。
 
-## 公開手順
-1. GitHubで新しいリポジトリを作成
-2. このZIPを解凍して、中身をすべてアップロード
-3. `Settings` → `Pages`
-4. `Deploy from a branch` を選択
-5. Branchを `main`、フォルダを `/root` にして保存
+## 公開方法
+ZIPを解凍し、`index.html` と `assets` フォルダをGitHubリポジトリのルートにアップロードしてください。
 
-## 修正箇所
-`index.html` 内の `@YOUR_LINE_ID` を実際のLINE公式アカウントURLに置き換えてください。
+## 変更する場所
+`index.html`内の `@YOUR_LINE_ID` を実際のLINE公式アカウントURLに変更してください。
+
+## 今回の修正
+CSSを外部ファイルではなく `index.html` 内に埋め込みました。
+そのため、GitHub PagesでCSSの読み込み漏れが起きにくくなっています。
