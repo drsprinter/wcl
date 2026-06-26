@@ -1,17 +1,13 @@
-# Women's Life Lab Website
+# Women's Communication Lab website
 
-GitHub Pagesでそのまま公開できる静的HTMLサイトです。
+GitHub Pagesで公開できる静的HTMLサイトです。
 
-## 編集ポイント
+## 公開手順
+1. GitHubで新しいリポジトリを作成
+2. このZIPを解凍して、中身をすべてアップロード
+3. `Settings` → `Pages`
+4. `Deploy from a branch` を選択
+5. Branchを `main`、フォルダを `/root` にして保存
 
-- `index.html` 内の `https://line.me/R/ti/p/@YOUR_LINE_ID` を実際のLINEリンクに置換してください。
-- ロゴ画像は `assets/logo.png` です。
-- 色や余白は `style.css` で調整できます。
-
-## GitHub Pages公開手順
-
-1. GitHubで新規リポジトリを作成
-2. このフォルダ内の `index.html`, `style.css`, `assets/logo.png` をアップロード
-3. Settings → Pages → Source を `Deploy from a branch` に設定
-4. Branch を `main` / `/root` にして Save
-5. 数分後に公開URLが発行されます
+## 修正箇所
+`index.html` 内の `@YOUR_LINE_ID` を実際のLINE公式アカウントURLに置き換えてください。
