@@ -1,234 +1,54 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Women's Communication Lab | 本音で生きると、人生が輝く。</title>
-  <meta name="description" content="Women's Communication Labは、自分の本音と向き合い、あなたらしいパートナーシップと人生を見つけるための対話プログラムです。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Women's Communication Lab | 本音で生きると、人生が輝く。</title>
+<meta name="description" content="Women's Communication Labは、自分の本音と向き合い、あなたらしいパートナーシップと人生を見つけるための対話プログラムです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#507c69;--deep:#294538;--pink:#e8b9b9;--pink-dark:#d58f92;--cream:#fff9f3;--brown:#a86d5f;--ink:#2c2a27;--muted:#756f68;--shadow:0 20px 60px rgba(80,70,60,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,#fffaf5 0%,#fff 50%,#fff8f3 100%);line-height:1.9}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.site-header{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;gap:28px;padding:14px clamp(18px,4vw,56px);background:linear-gradient(180deg,rgba(255,250,245,.95),rgba(255,250,245,.72));backdrop-filter:blur(16px)}
+.brand img{width:clamp(150px,18vw,230px);height:auto;mix-blend-mode:multiply}.nav{margin-left:auto;display:flex;gap:28px;font-size:14px;font-weight:700}.header-cta,.primary-button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:linear-gradient(135deg,var(--pink),var(--pink-dark));color:#fff;font-weight:700;padding:14px 24px;box-shadow:0 16px 36px rgba(213,143,146,.28)}.header-cta{font-size:14px;white-space:nowrap}
+.hero{min-height:94vh;position:relative;display:grid;place-items:center;overflow:hidden;background-image:url("assets/hero-bg.jpg");background-size:cover;background-position:center;color:white;text-align:center;padding:150px 20px 80px}.hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-1px;height:90px;background:var(--cream);border-radius:50% 50% 0 0/100% 100% 0 0}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,250,245,.25),rgba(56,40,28,.42) 42%,rgba(55,34,20,.58)),radial-gradient(circle at 50% 45%,rgba(255,255,255,.08),transparent 45%)}.hero-content{position:relative;z-index:2;max-width:900px;text-shadow:0 3px 22px rgba(0,0,0,.45)}.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:13px;font-weight:700;margin:0 0 26px}
+h1,h2,h3{font-family:"Noto Serif JP",serif;line-height:1.45;letter-spacing:.06em}h1{font-size:clamp(44px,7vw,88px);font-weight:600;margin:0 0 18px}h1 span,.final-cta h2 span{display:inline-block;white-space:nowrap}.hero-sub{font-family:"Noto Serif JP",serif;font-size:clamp(18px,2vw,26px);margin:0 0 30px}.scroll-mark{position:absolute;z-index:3;bottom:18px;letter-spacing:.22em;font-size:11px;opacity:.8}
+.section{padding:clamp(72px,9vw,126px) 20px;position:relative}.container{max-width:1120px;margin:auto}.narrow{max-width:880px}.section-kicker{text-align:center;color:var(--brown);letter-spacing:.22em;font-size:12px;font-weight:700;margin:0 0 8px}h2{text-align:center;font-size:clamp(27px,4vw,44px);margin:0 0 42px;color:var(--deep)}.lead{font-size:18px;color:var(--muted)}.centered{text-align:center}.pain{background:var(--cream)}
+.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px;margin:34px 0}.check-grid p{margin:0;padding:14px 14px 14px 48px;background:rgba(255,255,255,.7);border:1px solid rgba(232,185,185,.38);border-radius:18px;position:relative}.check-grid p:before{content:"";position:absolute;left:18px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--pink);box-shadow:inset 0 0 0 4px #fff}
+.comparison{display:grid;grid-template-columns:1fr auto 1fr auto 1.35fr;gap:18px;align-items:stretch;margin:34px 0 42px}.card,.benefit-grid article,.program-grid article,.plans article,.voice-grid article,.support-box,details{background:rgba(255,255,255,.82);border:1px solid rgba(80,124,105,.12);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.card span{display:block;color:var(--brown);font-size:14px;font-weight:700;margin-bottom:10px}.card strong{font-family:"Noto Serif JP",serif;font-size:20px;color:var(--deep)}.card.accent{background:linear-gradient(135deg,#6e8b72,#426d5b);color:#fff}.card.accent span,.card.accent strong{color:#fff}.arrow{display:grid;place-items:center;font-size:46px;color:var(--green)}.text-block{max-width:880px;margin:auto}.text-block p{margin:0 0 20px}.quote{font-family:"Noto Serif JP",serif;color:var(--green);font-size:clamp(20px,2.5vw,28px);text-align:center;margin-top:34px!important}
+.benefits{background:linear-gradient(180deg,#fff,#fbf5ed)}.benefit-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.benefit-grid article{text-align:center;padding:26px 18px}.benefit-grid span,.program-grid span{color:var(--brown);letter-spacing:.16em;font-weight:700;font-size:13px}.benefit-grid h3{font-size:18px;color:var(--deep);margin:8px 0 14px}.benefit-grid p,.program-grid p,.plans li,.voice-grid p,.trust-list p{font-size:14.5px;color:var(--muted)}
+.story{background:linear-gradient(135deg,#f8efe8,#fffaf6)}.two-col{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.two-col h2{text-align:left}.two-col .section-kicker{text-align:left}
+.program-grid,.plans,.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}.program-grid article em{display:block;color:var(--green);font-style:normal;margin-top:18px;font-weight:700}.support-box{margin:30px auto;max-width:850px;background:linear-gradient(135deg,#eef3ea,#fff)}.support-box h3,.plans h3,.voice-grid h3{color:var(--deep);margin-top:0}.plans{grid-template-columns:repeat(2,1fr)}.voice{background:var(--cream)}.voice-grid{grid-template-columns:repeat(2,1fr)}.trust-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.trust-list p{margin:0;padding:24px;border-left:4px solid var(--green);background:white;border-radius:18px;box-shadow:var(--shadow)}
+.faq{background:#fff}details{margin-bottom:14px;padding:0}summary{cursor:pointer;padding:22px 26px;font-weight:700;color:var(--deep)}details p{padding:0 26px 24px;margin:0;color:var(--muted)}
+.final-cta{text-align:center;padding:100px 20px;color:white;background:linear-gradient(135deg,rgba(41,69,56,.92),rgba(80,124,105,.88)),url("assets/hero-bg.jpg") center/cover}.final-cta h2{color:white;margin-bottom:18px}.final-cta p{font-size:18px}.final-cta small{display:block;margin-top:18px;opacity:.86}.footer{display:grid;grid-template-columns:220px 1fr;gap:36px;padding:44px clamp(22px,5vw,70px);background:#fffaf5;color:var(--muted)}.footer img{mix-blend-mode:multiply}.footer p{margin:0 0 8px}.footer strong{color:var(--deep);margin-right:8px}
+@media (max-width:920px){.site-header{position:absolute;align-items:flex-start}.nav{display:none}.header-cta{display:none}.brand img{width:180px}.hero{min-height:86vh;background-position:34% center}.check-grid,.comparison,.benefit-grid,.two-col,.program-grid,.plans,.voice-grid,.trust-list,.footer{grid-template-columns:1fr}.arrow{display:none}.two-col h2,.two-col .section-kicker{text-align:center}.footer{text-align:center}.footer img{margin:auto;width:220px}}
+@media (max-width:520px){.hero{padding-top:120px}h1{font-size:40px}.hero-sub{font-size:18px}.primary-button{width:100%;max-width:320px}.section{padding:64px 16px}.card,.benefit-grid article,.program-grid article,.plans article,.voice-grid article,.support-box,details{border-radius:20px}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Women's Communication Lab Home">
-      <img src="assets/logo.jpg" alt="Women's Communication Lab ロゴ">
-    </a>
-    <nav class="nav">
-      <a href="#about">私たちについて</a>
-      <a href="#program">プログラム</a>
-      <a href="#voice">受講者の声</a>
-      <a href="#faq">よくある質問</a>
-    </nav>
-    <a class="header-cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Women’s Communication Lab</p>
-        <h1><span>本音で生きると、</span><span>人生が輝く。</span></h1>
-        <p class="hero-sub">答えは、あなたの中にある。</p>
-        <a class="primary-button" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a>
-      </div>
-      <div class="scroll-mark">SCROLL</div>
-    </section>
-
-    <section class="section pain">
-      <div class="container narrow">
-        <p class="section-kicker">PAIN</p>
-        <h2>こんなこと、感じていませんか？</h2>
-        <div class="check-grid">
-          <p>本音が言えず、いつも我慢してしまう</p>
-          <p>この人と結婚していいのか、決められない</p>
-          <p>どんな人を選べばいいのか、わからない</p>
-          <p>恋愛テクニックを試したけど、なんか違う</p>
-          <p>自分が本当に望んでいることがわからない</p>
-          <p>ありのままの自分では、愛されない気がする</p>
-          <p>うまく言葉にできなくて、すれ違ってしまう</p>
-          <p>結婚したら、自由がなくなる気がして踏み出せない</p>
-        </div>
-        <p class="lead centered">もしひとつでも当てはまるなら、それはテクニックが足りないのではなく、あなた自身の本音に、まだ気づいていないだけかもしれません。</p>
-      </div>
-    </section>
-
-    <section class="section insight" id="about">
-      <div class="container">
-        <p class="section-kicker">INSIGHT</p>
-        <h2>恋愛コーチング・ライフコーチとの違い</h2>
-        <div class="comparison">
-          <div class="card soft">
-            <span>恋愛コーチングが教えること</span>
-            <strong>「どう振る舞えば、選ばれるか」</strong>
-          </div>
-          <div class="arrow">›</div>
-          <div class="card soft">
-            <span>ライフコーチが教えること</span>
-            <strong>「どんな人生を設計するか」</strong>
-          </div>
-          <div class="arrow">›</div>
-          <div class="card accent">
-            <span>Women's Communication Labがやること</span>
-            <strong>「あなたが本当に何を望んでいるかを、一緒に見つける」</strong>
-          </div>
-        </div>
-        <div class="text-block">
-          <p>巷の恋愛コーチングは、男性に選ばれるためのテクニックを教えます。ライフコーチは、目標設定と行動計画をサポートします。どちらも素晴らしいアプローチです。</p>
-          <p>でも、「テクニック通りにやったのに、なんか違う」「目標を立てたのに、心がついてこない」——そんな経験はありませんか。</p>
-          <p>それは、出発点が「外側」にあるからです。Women's Communication Labの出発点は、あなたの内側です。正解を教えません。答えを出しません。あなたの本音と向き合う問いを投げかけ、あなたが自分の答えを見つけるまで、隣で伴走します。</p>
-          <p class="quote">心が変わると、言葉が変わる。<br>言葉が変わると、関係が変わる。<br>関係が変わると、人生が輝く。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section benefits">
-      <div class="container">
-        <p class="section-kicker">BENEFIT</p>
-        <h2>このプログラムで手に入るもの</h2>
-        <div class="benefit-grid">
-          <article><span>01</span><h3>自分の本音を知る力</h3><p>「本当は何が嫌なのか」「本当は何が欲しいのか」。言葉にならなかった感情が、少しずつ輪郭を持ち始めます。</p></article>
-          <article><span>02</span><h3>等身大の自分で伝える対話術</h3><p>Iメッセージを使った伝え方、言葉の選び方、言うタイミング、言う時のマインドを磨きます。</p></article>
-          <article><span>03</span><h3>理想の夫婦・パートナーシップ</h3><p>「世間の普通」ではなく、「私にとっての最高の形」をグループでの哲学的な対話を通して描きます。</p></article>
-          <article><span>04</span><h3>内側から滲み出る印象・所作</h3><p>姿勢、呼吸、目線、振る舞い。一生ものの所作を身につけ、内側の変化を見た目にも表します。</p></article>
-          <article><span>05</span><h3>自分を愛せる自己肯定感</h3><p>ありのままの自分でいい、と心から思えるようになること。それが人生全体を輝かせます。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section story">
-      <div class="container two-col">
-        <div>
-          <p class="section-kicker">STORY</p>
-          <h2>私がこのサービスをつくった理由</h2>
-        </div>
-        <div class="text-block">
-          <p>はじめまして、chiakiです。</p>
-          <p>私は子どもの頃から、人の感情と言葉の間にある「ズレ」が気になっていました。一人っ子だった私は、両親の関係が壊れていく中で、それぞれの言い分を聞き、剥き出しの感情を、相手に伝わる言葉に変換し続けました。</p>
-          <p>その後、客室乗務員として10年間・地球90周分を飛び、世界中の多様な文化・価値観と出会いました。「日本の普通」の外に、無数の生き方があることを体で知りました。</p>
-          <p>26歳のとき、がんを宣告されました。女性としての生き方すべてに絶望しました。キャリア、パートナー、結婚、出産——「もう手に入らないかもしれない」と思った瞬間、初めて「自分はどう生きたいのか」という問いと向き合いました。</p>
-          <p>29歳で、本音で話せる相手と結婚しました。2025年には、生後4カ月の赤ちゃんと家族で2カ月間ヨーロッパへ。結婚しても、子どもができても、やりたいことは諦めない。それが、私たちの夫婦の形です。</p>
-          <p class="quote">「初めて、理想の夫婦像を見ることができた」</p>
-          <p>私自身が、このサービスの実証例でありたいと思っています。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section program" id="program">
-      <div class="container">
-        <p class="section-kicker">PROGRAM</p>
-        <h2>このプログラムには、正解はありません。</h2>
-        <p class="lead centered">あるのは、あなたが初めて答える、あなたへの問いだけです。</p>
-        <div class="program-grid">
-          <article>
-            <span>PART 1</span>
-            <h3>世界から「常識」を疑う</h3>
-            <p>世界旅行のシェアとジェンダーデータをもとに、「結婚＝こういうもの」という思い込みをほぐします。</p>
-            <em>問い：「世間の目を100%無視したら、どんな夫婦になりたい？」</em>
-          </article>
-          <article>
-            <span>PART 2</span>
-            <h3>「社会の普通」を捨てる</h3>
-            <p>夫婦というチームの役割分担、理想の24時間、譲れない価値観——10のテーマで哲学対話を行います。</p>
-            <em>問い：「お金も時間も諦めなくていいとしたら、どんな役割分担をしたい？」</em>
-          </article>
-          <article>
-            <span>PART 3</span>
-            <h3>自分を更新する</h3>
-            <p>印象診断と一生ものの所作を学び、実際のディナー形式で体験。最後に「ネクスト宣言」を行います。</p>
-          </article>
-        </div>
-
-        <div class="support-box">
-          <h3>サポート体制</h3>
-          <p>各回の前後に、chiakiとの1on1セッション（90分）を設けています。グループで話す前に気持ちを整理し、話した後に自分の気づきを深める時間です。</p>
-        </div>
-
-        <div class="plans">
-          <article>
-            <h3>単発セッション</h3>
-            <ul>
-              <li>事前：価値観シートによるヒアリング</li>
-              <li>当日：90分オンライン個別セッション</li>
-              <li>お渡し：タイプ診断＋具体的アクションシート</li>
-            </ul>
-          </article>
-          <article>
-            <h3>スクール形式（伴走型）</h3>
-            <ul>
-              <li>事前：価値観シートによるヒアリング</li>
-              <li>グループワーク120分×3回</li>
-              <li>個別1on1セッション90分×3回</li>
-              <li>お渡し：タイプ診断＋具体的アクションシート</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section voice" id="voice">
-      <div class="container">
-        <p class="section-kicker">VOICE</p>
-        <h2>受講者の声</h2>
-        <div class="voice-grid">
-          <article>
-            <h3>Aさん・30代・受講時彼氏あり</h3>
-            <p>「ワークの中で気づいたんです。私が好きだったのは『安心できる人』じゃなくて、『たまに連絡が来るドキドキ』だったんだって。自分から別れを告げたら、モヤモヤが消えました。転職活動にも、初めて一歩踏み出せました。」</p>
-          </article>
-          <article>
-            <h3>Bさん・20代・受講時彼氏なし</h3>
-            <p>「これまでずっと、相手の望みを叶えることが正解だと思っていました。でもワークを通じて気づきました。自分の本音を話すことが、相手にとっても好印象なんだと。」</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section trust">
-      <div class="container">
-        <p class="section-kicker">TRUST</p>
-        <h2>なぜchiakiが伴走できるのか</h2>
-        <div class="trust-list">
-          <p><strong>客室乗務員として10年・地球90周分の乗務経験</strong><br>日本の固定観念にとどまらない、世界の多様な価値観と出会ってきた。</p>
-          <p><strong>両親の離婚調停に深く関わった経験</strong><br>剥き出しの感情を、相手に伝わる言葉に変換する力を幼少期から培った。</p>
-          <p><strong>26歳でのがん経験</strong><br>「自分はどう生きたいか」を人生の危機から問い続けてきた。</p>
-          <p><strong>29歳で結婚・家族でヨーロッパ2カ月</strong><br>「自由と結婚は両立する」を自ら体現している。</p>
-        </div>
-        <p class="lead centered">資格や肩書きではなく、chiaki自身の人生が、このサービスの根拠です。</p>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq">
-      <div class="container narrow">
-        <p class="section-kicker">FAQ</p>
-        <h2>よくある質問</h2>
-        <details open><summary>どんな人が受けに来ていますか？</summary><p>「今の彼との関係をどうすればいいかわからない」「この人と結婚していいのかな、と迷っている」「自分が本当に何を望んでいるかわからない」という方が多いです。年齢は20〜30代の独身女性が中心です。</p></details>
-        <details><summary>結婚したいかどうか、まだはっきりしていないのですが受けられますか？</summary><p>はい、大丈夫です。「いつかパートナーと深く繋がりたい」という気持ちがあれば十分です。</p></details>
-        <details><summary>今パートナーがいなくても受けられますか？</summary><p>はい、受けられます。自分の本音と価値観を知ることが最初の一歩です。</p></details>
-        <details><summary>グループワークで本音を話せるか不安です</summary><p>各回の前にchiakiとの1on1セッションがあります。安心して臨んでいただけます。</p></details>
-        <details><summary>話すのが苦手でも大丈夫ですか？</summary><p>大丈夫です。正解を言う場所ではないので、うまく話せなくていいんです。</p></details>
-        <details><summary>オンラインでも効果がありますか？</summary><p>はい。全セッションオンラインで完結します。全国どこからでもご参加いただけます。</p></details>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container narrow">
-        <h2><span>テクニックをやめた日から、</span><span>あなたの人生は動き始める。</span></h2>
-        <p>ありのままのあなたで、幸せになっていい。その最初の一歩を、一緒に踏み出しませんか。</p>
-        <a class="primary-button" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a>
-        <small>返信はchiakiが直接行います。営業・勧誘は一切しません。</small>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <img src="assets/logo.jpg" alt="Women's Communication Lab ロゴ">
-    <div>
-      <p><strong>Mission</strong> 自分の内側と向き合い、心豊かに生きる女性を増やす。</p>
-      <p><strong>Vision</strong> 自分の人生を、自分で動かせる女性で、日本を満たす。</p>
-      <p><strong>Tagline</strong> 本音で生きると、人生が輝く。</p>
-      <small>© Women's Communication Lab</small>
-    </div>
-  </footer>
-</body>
-</html>
+<header class="site-header">
+  <a class="brand" href="#top"><img src="assets/logo.jpg" alt="Women's Communication Lab ロゴ"></a>
+  <nav class="nav"><a href="#about">私たちについて</a><a href="#program">プログラム</a><a href="#voice">受講者の声</a><a href="#faq">よくある質問</a></nav>
+  <a class="header-cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a>
+</header>
+<main id="top">
+<section class="hero"><div class="hero-overlay"></div><div class="hero-content">
+<p class="eyebrow">Women’s Communication Lab</p>
+<h1><span>本音で生きると、</span><span>人生が輝く。</span></h1>
+<p class="hero-sub">答えは、あなたの中にある。</p>
+<a class="primary-button" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a></div><div class="scroll-mark">SCROLL</div></section>
+<section class="section pain"><div class="container narrow"><p class="section-kicker">PAIN</p><h2>こんなこと、感じていませんか？</h2><div class="check-grid">
+<p>本音が言えず、いつも我慢してしまう</p><p>この人と結婚していいのか、決められない</p><p>どんな人を選べばいいのか、わからない</p><p>恋愛テクニックを試したけど、なんか違う</p><p>自分が本当に望んでいることがわからない</p><p>ありのままの自分では、愛されない気がする</p><p>うまく言葉にできなくて、すれ違ってしまう</p><p>結婚したら、自由がなくなる気がして踏み出せない</p></div><p class="lead centered">もしひとつでも当てはまるなら、それはテクニックが足りないのではなく、あなた自身の本音に、まだ気づいていないだけかもしれません。</p></div></section>
+<section class="section insight" id="about"><div class="container"><p class="section-kicker">INSIGHT</p><h2>恋愛コーチング・ライフコーチとの違い</h2><div class="comparison"><div class="card soft"><span>恋愛コーチングが教えること</span><strong>「どう振る舞えば、選ばれるか」</strong></div><div class="arrow">›</div><div class="card soft"><span>ライフコーチが教えること</span><strong>「どんな人生を設計するか」</strong></div><div class="arrow">›</div><div class="card accent"><span>Women's Communication Labがやること</span><strong>「あなたが本当に何を望んでいるかを、一緒に見つける」</strong></div></div><div class="text-block"><p>巷の恋愛コーチングは、男性に選ばれるためのテクニックを教えます。ライフコーチは、目標設定と行動計画をサポートします。どちらも素晴らしいアプローチです。</p><p>でも、「テクニック通りにやったのに、なんか違う」「目標を立てたのに、心がついてこない」——そんな経験はありませんか。</p><p>それは、出発点が「外側」にあるからです。Women's Communication Labの出発点は、あなたの内側です。正解を教えません。答えを出しません。あなたの本音と向き合う問いを投げかけ、あなたが自分の答えを見つけるまで、隣で伴走します。</p><p class="quote">心が変わると、言葉が変わる。<br>言葉が変わると、関係が変わる。<br>関係が変わると、人生が輝く。</p></div></div></section>
+<section class="section benefits"><div class="container"><p class="section-kicker">BENEFIT</p><h2>このプログラムで手に入るもの</h2><div class="benefit-grid"><article><span>01</span><h3>自分の本音を知る力</h3><p>「本当は何が嫌なのか」「本当は何が欲しいのか」。言葉にならなかった感情が、少しずつ輪郭を持ち始めます。</p></article><article><span>02</span><h3>等身大の自分で伝える対話術</h3><p>Iメッセージを使った伝え方、言葉の選び方、言うタイミング、言う時のマインドを磨きます。</p></article><article><span>03</span><h3>理想の夫婦・パートナーシップ</h3><p>「世間の普通」ではなく、「私にとっての最高の形」を哲学的な対話を通して描きます。</p></article><article><span>04</span><h3>内側から滲み出る印象・所作</h3><p>姿勢、呼吸、目線、振る舞い。一生ものの所作を身につけます。</p></article><article><span>05</span><h3>自分を愛せる自己肯定感</h3><p>ありのままの自分でいい、と心から思えるようになること。</p></article></div></div></section>
+<section class="section story"><div class="container two-col"><div><p class="section-kicker">STORY</p><h2>私がこのサービスをつくった理由</h2></div><div class="text-block"><p>はじめまして、chiakiです。</p><p>私は子どもの頃から、人の感情と言葉の間にある「ズレ」が気になっていました。一人っ子だった私は、両親の関係が壊れていく中で、それぞれの言い分を聞き、剥き出しの感情を、相手に伝わる言葉に変換し続けました。</p><p>その後、客室乗務員として10年間・地球90周分を飛び、世界中の多様な文化・価値観と出会いました。</p><p>26歳のとき、がんを宣告されました。「もう手に入らないかもしれない」と思った瞬間、初めて「自分はどう生きたいのか」という問いと向き合いました。</p><p>29歳で、本音で話せる相手と結婚しました。結婚しても、子どもができても、やりたいことは諦めない。それが、私たちの夫婦の形です。</p><p class="quote">「初めて、理想の夫婦像を見ることができた」</p><p>私自身が、このサービスの実証例でありたいと思っています。</p></div></div></section>
+<section class="section program" id="program"><div class="container"><p class="section-kicker">PROGRAM</p><h2>このプログラムには、正解はありません。</h2><p class="lead centered">あるのは、あなたが初めて答える、あなたへの問いだけです。</p><div class="program-grid"><article><span>PART 1</span><h3>世界から「常識」を疑う</h3><p>世界旅行のシェアとジェンダーデータをもとに、「結婚＝こういうもの」という思い込みをほぐします。</p><em>問い：「世間の目を100%無視したら、どんな夫婦になりたい？」</em></article><article><span>PART 2</span><h3>「社会の普通」を捨てる</h3><p>夫婦というチームの役割分担、理想の24時間、譲れない価値観をテーマに哲学対話を行います。</p><em>問い：「お金も時間も諦めなくていいとしたら、どんな役割分担をしたい？」</em></article><article><span>PART 3</span><h3>自分を更新する</h3><p>印象診断と一生ものの所作を学び、最後に「ネクスト宣言」を行います。</p></article></div><div class="support-box"><h3>サポート体制</h3><p>各回の前後に、chiakiとの1on1セッション（90分）を設けています。</p></div><div class="plans"><article><h3>単発セッション</h3><ul><li>価値観シートによるヒアリング</li><li>90分オンライン個別セッション</li><li>タイプ診断＋具体的アクションシート</li></ul></article><article><h3>スクール形式（伴走型）</h3><ul><li>グループワーク120分×3回</li><li>個別1on1セッション90分×3回</li><li>タイプ診断＋具体的アクションシート</li></ul></article></div></div></section>
+<section class="section voice" id="voice"><div class="container"><p class="section-kicker">VOICE</p><h2>受講者の声</h2><div class="voice-grid"><article><h3>Aさん・30代・受講時彼氏あり</h3><p>「自分から別れを告げたら、モヤモヤが消えました。転職活動にも、初めて一歩踏み出せました。」</p></article><article><h3>Bさん・20代・受講時彼氏なし</h3><p>「自分の本音を話すことが、相手にとっても好印象なんだと気づきました。」</p></article></div></div></section>
+<section class="section trust"><div class="container"><p class="section-kicker">TRUST</p><h2>なぜchiakiが伴走できるのか</h2><div class="trust-list"><p><strong>客室乗務員として10年・地球90周分の乗務経験</strong><br>世界の多様な価値観と出会ってきた。</p><p><strong>両親の離婚調停に深く関わった経験</strong><br>感情を言葉に変換する力を培った。</p><p><strong>26歳でのがん経験</strong><br>「自分はどう生きたいか」を問い続けてきた。</p><p><strong>29歳で結婚・家族でヨーロッパ2カ月</strong><br>「自由と結婚は両立する」を体現している。</p></div></div></section>
+<section class="section faq" id="faq"><div class="container narrow"><p class="section-kicker">FAQ</p><h2>よくある質問</h2><details open><summary>どんな人が受けに来ていますか？</summary><p>20〜30代の独身女性が中心です。テクニックより自分自身と向き合いたい方が多いです。</p></details><details><summary>結婚したいかどうか、まだはっきりしていないのですが受けられますか？</summary><p>はい、大丈夫です。</p></details><details><summary>今パートナーがいなくても受けられますか？</summary><p>はい、受けられます。</p></details><details><summary>オンラインでも効果がありますか？</summary><p>はい。全国どこからでも参加できます。</p></details></div></section>
+<section class="final-cta"><div class="container narrow"><h2><span>テクニックをやめた日から、</span><span>あなたの人生は動き始める。</span></h2><p>ありのままのあなたで、幸せになっていい。その最初の一歩を、一緒に踏み出しませんか。</p><a class="primary-button" href="https://line.me/R/ti/p/@YOUR_LINE_ID">LINEで無料相談してみる</a><small>返信はchiakiが直接行います。営業・勧誘は一切しません。</small></div></section>
+</main>
+<footer class="footer"><img src="assets/logo.jpg" alt="Women's Communication Lab ロゴ"><div><p><strong>Mission</strong> 自分の内側と向き合い、心豊かに生きる女性を増やす。</p><p><strong>Vision</strong> 自分の人生を、自分で動かせる女性で、日本を満たす。</p><p><strong>Tagline</strong> 本音で生きると、人生が輝く。</p><small>© Women's Communication Lab</small></div></footer>
+</body></html>
